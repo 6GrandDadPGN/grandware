@@ -93,7 +93,6 @@
 
 <body>
 
-<!-- Loading -->
 <div id="loadingOverlay" class="loading-overlay">
   <div>
     <div class="loading-text" id="line1"></div>
@@ -105,7 +104,6 @@
   </div>
 </div>
 
-<!-- Window -->
 <div class="window">
 
   <div class="titlebar">
@@ -117,10 +115,9 @@
   </div>
 
 <pre>
-<span class="accent">      ╱|、</span>
-<span class="accent">     (`O - 7</span>
-<span class="accent">      |、⁻〵 6GrandDadPGN</span>
-<span class="accent">      じしˍ,)ノ</span>
+<div style="display:flex; justify-content:center; margin-bottom:10px; filter: drop-shadow(0 0 6px #000);">
+  <img src="tragedy mask.png" alt="mask" style="width:177px; height:auto;" />
+</div>
 
 <span class="yellow">[ USER ]</span>
   ├─ user        : <span class="green">6GrandDadPGN</span>
@@ -148,9 +145,8 @@
       const lines = [
         '$ curl -X GET https://grandware.com',
         '> connecting...',
-        '> /\/\\\\ Access Granted /\\\\/\\',
-        '> ( 0.0 ) 6GrandDadPGN',
-        '> > ^ <^'
+        '>Access Granted',
+        '>6GrandDadPGN',
       ];
       
       const loadingOverlay = document.getElementById('loadingOverlay');
@@ -189,7 +185,7 @@
 
   document.addEventListener("DOMContentLoaded", type);
 
-   // Buttons
+  // Buttons
   const windowEl = document.querySelector(".window");
 
   const closeBtn = document.getElementById("closeBtn");
